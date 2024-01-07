@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class _27 {
     public int removeElement(int[] nums, int val) {
@@ -17,7 +16,7 @@ public class _27 {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the number of elements: ");
         int s= sc.nextInt();
-        int nums[]=new int[s];
+        int[] nums=new int[s];
         for (int i=0;i<s;i++){
             nums[i]=sc.nextInt();
         }
