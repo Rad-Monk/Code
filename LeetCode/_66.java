@@ -4,11 +4,9 @@ public class _66 {
             digits[digits.length-1]= digits[digits.length-1] + 1;
             return digits;
         }
-        int last= digits.length-2;
-        digits[digits.length-1]=0;
+
+        int last= digits.length-1;
         while (digits[last] ==9 ){
-            digits[digits.length-last]=0;
-            last--;
             if (last==0 ){
                 if (digits[last]==9){
                     int[] newdig= new int[digits.length+1];
@@ -22,6 +20,8 @@ public class _66 {
                     break;
                 }
             }
+            digits[last]=0;
+            last--;
         }
         digits[last]=digits[last] + 1;
         return  digits;
