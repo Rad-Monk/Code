@@ -1,10 +1,10 @@
 import java.util.*;
 public class _380 {
-    public class RandomizedSet() {
+    public RandomizedSet() {
         public ArrayList<Integer> list = new ArrayList<>();
         public Map<Integer, Integer> map = new HashMap<>();
 
-
+    }
     public boolean has(int val){
         return map.containsKey(val);
     }
@@ -29,4 +29,4 @@ public class _380 {
         Random r= new Random();
         return list.get(r.nextInt(list.size()));
     }
-}}
+}
