@@ -6,7 +6,6 @@ class _647{
         }
         return true;
     }
-
     public int countSubstrings(String s) {
         int ans = 0;
         int n = s.length();
