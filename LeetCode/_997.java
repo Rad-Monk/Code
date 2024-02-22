@@ -8,7 +8,6 @@ public class _997 {
             trusting[ints[0]]++;
             trusted[ints[1]]++;
         }
-
         int ans = -1;
 
         for (int i = 1; i <= n; i++) {
