@@ -1,16 +1,12 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class _997 {
     public int findJudge(int n, int[][] trust) {
         int[] trusting = new int[n + 1];
         int[] trusted = new int[n + 1];
 
-        for (int i = 0; i < trust.length; i++) {
-            trusting[trust[i][0]]++;
-            trusted[trust[i][1]]++;
+        for (int[] ints : trust) {
+            trusting[ints[0]]++;
+            trusted[ints[1]]++;
         }
 
         int ans = -1;
